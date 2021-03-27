@@ -4,6 +4,7 @@
 	"scripts": {
 		"dev": "svelte-kit dev",
 		"build": "svelte-kit build",
+		"build:vercel": "ADAPTER=@sveltejs/adapter-vercel OPTIONS={} npm run build",
 		"start": "svelte-kit start",
 		"lint": "prettier --check . && eslint .",
 		"format": "prettier --write ."
@@ -11,6 +12,7 @@
 	"devDependencies": {
 		"@sveltejs/adapter-node": "next",
 		"@sveltejs/adapter-static": "next",
+		"@sveltejs/adapter-vercel": "next",
 		"@sveltejs/kit": "next",
 		"@typescript-eslint/eslint-plugin": "^4.19.0",
 		"@typescript-eslint/parser": "^4.19.0",

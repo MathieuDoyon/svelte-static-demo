@@ -1,5 +1,6 @@
 const sveltePreprocess = require('svelte-preprocess');
-const adapter = require('@sveltejs/adapter-static');
+const adapter = require(process.env.ADAPTER || '@sveltejs/adapter-static');
+const options = JSON.stringify(process.env.OPTIONS || '{}');
 const pkg = require('./package.json');
 
 /** @type {import('@sveltejs/kit').Config} */

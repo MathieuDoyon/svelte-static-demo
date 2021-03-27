@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Millennium Falcon</title>
+
+
+
+<link rel="modulepreload" href="/./_app/start-8582b60d.js">
+			<link rel="modulepreload" href="/./_app/chunks/index-5224b26e.js">
+			<link rel="modulepreload" href="/./_app/pages/starships/[id].svelte-dee8fee3.js">
+			<link rel="stylesheet" href="/./_app/assets/start-22b3cc32.css">
+			<link rel="stylesheet" href="/./_app/assets/pages/starships/[id].svelte-83ee756a.css">
+
+
+		<script type="module">
+			import { start } from "/./_app/start-8582b60d.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":"/."},
+				status: 200,
+				error: null,
+				session: {},
+				nodes: [
+					import("/./_app/pages/starships/[id].svelte-dee8fee3.js")
+				],
+				page: {
+					host: "location.host",
+					path: "/starships/10",
+					query: new URLSearchParams(""),
+					params: {"id":"10"}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div id="svelte">
+
+
+<nav class="svelte-auhxd6"><a href="/" sveltekit:prefetch class="svelte-auhxd6">home</a>
+	<a href="/starships" sveltekit:prefetch class="svelte-auhxd6">starships</a>
+</nav>
+
+
+
+<main class="svelte-1682rww">
+
+<h1 class="svelte-11b40ln">Millennium Falcon</h1>
+<div class="starship svelte-11b40ln"><div class="feature svelte-11b40ln"><div class="svelte-11b40ln">MGLT :</div>
+<div class="svelte-11b40ln">75</div></div>
+	<div class="feature svelte-11b40ln"><div class="svelte-11b40ln">manufacturer :</div>
+<div class="svelte-11b40ln">Corellian Engineering Corporation</div></div>
+	<div class="feature svelte-11b40ln"><div class="svelte-11b40ln">model :</div>
+<div class="svelte-11b40ln">YT-1300 light freighter</div></div>
+	<div class="feature svelte-11b40ln"><div class="svelte-11b40ln">starship_class :</div>
+<div class="svelte-11b40ln">Light freighter</div></div>
+</div>
+</main>
+
+
+
+	<script type="svelte-data" url="/starships/10.json">{"status":200,"statusText":"","headers":{"content-type":"application/json"},"body":"{\"name\":\"Millennium Falcon\",\"model\":\"YT-1300 light freighter\",\"manufacturer\":\"Corellian Engineering Corporation\",\"cost_in_credits\":\"100000\",\"length\":\"34.37\",\"max_atmosphering_speed\":\"1050\",\"crew\":\"4\",\"passengers\":\"6\",\"cargo_capacity\":\"100000\",\"consumables\":\"2 months\",\"hyperdrive_rating\":\"0.5\",\"MGLT\":\"75\",\"starship_class\":\"Light freighter\",\"pilots\":[\"http://swapi.dev/api/people/13/\",\"http://swapi.dev/api/people/14/\",\"http://swapi.dev/api/people/25/\",\"http://swapi.dev/api/people/31/\"],\"films\":[\"http://swapi.dev/api/films/1/\",\"http://swapi.dev/api/films/2/\",\"http://swapi.dev/api/films/3/\"],\"created\":\"2014-12-10T16:59:45.094000Z\",\"edited\":\"2014-12-20T21:23:49.880000Z\",\"url\":\"http://swapi.dev/api/starships/10/\"}"}</script>
+</div>
+	</body>
+</html>
