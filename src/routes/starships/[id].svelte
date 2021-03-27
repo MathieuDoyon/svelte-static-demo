@@ -75,7 +75,7 @@
 </div>
 
 <div class="film-list">
-	<h3>Films list</h3>
+	<h2>Films list <span>(fetch on client only for demo)</span></h2>
 	<!-- This section is call on client only -->
 	{#await filmsPromise}
 		<!-- promise is pending -->
@@ -113,6 +113,11 @@
 </div>
 
 <style>
+	h2 span {
+		font-style: italic;
+		font-weight: 500;
+		font-size: 0.5em;
+	}
 	.starship,
 	.film {
 		display: grid;
@@ -122,7 +127,7 @@
 	}
 
 	.film-list {
-		padding-top: 1em;
+		padding-top: 1.5em;
 	}
 
 	.film {
