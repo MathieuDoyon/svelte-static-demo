@@ -16,7 +16,9 @@
 	import { onMount } from 'svelte';
 	export let starship;
 
-	const fetchSWApi = (url) => fetch(url).then((response) => response.json());
+	const forceHttps = (url) => url.replace('http:', 'https:');
+
+	const fetchSWApi = (url) => fetch(forceHttps(url)).then((response) => response.json());
 
 	// Load films list on client only
 	let filmsPromise;
