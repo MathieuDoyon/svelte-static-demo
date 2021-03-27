@@ -6,13 +6,13 @@
 
 <nav>
 	<a href="/" sveltekit:prefetch class:active={path === '/'}>home</a>
-	<a href="/starships" sveltekit:prefetch class:active={path === '/starships'}>starships</a>
+	<a href="/starships" sveltekit:prefetch class:active={path.startsWith('/starships')}>starships</a>
 </nav>
 
 <style>
 	nav {
 		border-bottom: 1px solid var(--fg);
-		padding: 0 0 1em 0;
+		padding: 1em 0;
 		margin: 0 0 1em 0;
 		display: flex;
 		justify-content: center;
