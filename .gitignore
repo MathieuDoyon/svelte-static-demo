@@ -1,6 +1,5 @@
 .DS_Store
 node_modules
 /.svelte
-# Intentionaly push the build to be server as static files on DO
 /build
 /functions
