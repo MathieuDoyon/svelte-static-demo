@@ -35,6 +35,13 @@
 	a {
 		display: block;
 		padding: 0.5em 0;
-		border-bottom: 1px solid #999;
+		border-bottom: 1px solid var(--fg-light);
+		text-decoration: none;
+		opacity: 0.8;
+	}
+
+	a:hover,
+	a:focus {
+		opacity: 1;
 	}
 </style>

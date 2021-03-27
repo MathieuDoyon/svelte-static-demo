@@ -3,23 +3,23 @@
 </script>
 
 <script>
-	import './_global.css';
-
 	import { page, navigating } from '$app/stores';
 
 	import Nav from '$lib/Nav.svelte';
 	import PreloadingIndicator from '$lib/PreloadingIndicator.svelte';
+	import ThemeToggler from '$lib/ThemeToggler.svelte';
 
 	$: path = $page.path;
 </script>
-
-<Nav {path} />
 
 {#if $navigating}
 	<PreloadingIndicator />
 {/if}
 
+<Nav {path} />
+
 <main>
+	<ThemeToggler />
 	<slot />
 </main>
 

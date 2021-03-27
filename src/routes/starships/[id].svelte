@@ -109,10 +109,6 @@
 </div>
 
 <style>
-	h1 {
-		color: rgb(0, 0, 0);
-	}
-
 	.starship,
 	.film {
 		display: grid;
@@ -131,11 +127,11 @@
 	}
 
 	.feature > div:nth-child(1) {
-		color: rgb(128, 128, 128);
+		color: var(--fg);
 	}
 
 	.feature > div:nth-child(2) {
-		color: rgb(0, 0, 0);
+		color: var(--fg);
 		font-weight: 600;
 	}
 </style>

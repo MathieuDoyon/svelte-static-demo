@@ -2,12 +2,16 @@
 	export const prerender = true;
 </script>
 
+<script>
+	import Logo from '$lib/Logo.svelte';
+</script>
+
 <svelte:head>
 	<title>Star Wars</title>
 </svelte:head>
 
 <div class="center">
-	<img alt="Star wars logo" src="/Star_wars2.svg" />
+	<Logo />
 </div>
 
 <style>

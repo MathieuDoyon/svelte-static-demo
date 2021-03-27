@@ -11,7 +11,7 @@
 
 <style>
 	nav {
-		border-bottom: 1px solid black;
+		border-bottom: 1px solid var(--fg);
 		padding: 0 0 1em 0;
 		margin: 0 0 1em 0;
 		display: flex;
@@ -27,21 +27,20 @@
 	a {
 		display: block;
 		float: left;
-		color: rgba(0, 0, 0, 1);
+		color: var(--fg-light);
 		margin: 0 1em 0 0;
 		text-decoration: none;
-		color: rgba(0, 0, 0, 0.6);
 	}
 
 	a + a::before {
 		content: '•';
-		color: rgba(0, 0, 0, 0.4);
+		color: var(--fg-light);
 		margin: 0 1em 0 0;
 	}
 
 	a:hover,
 	a:focus,
 	.active {
-		color: rgba(0, 0, 0, 1);
+		color: var(--fg);
 	}
 </style>
