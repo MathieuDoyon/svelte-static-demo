@@ -8,6 +8,7 @@
 	import Nav from '$lib/Nav.svelte';
 	import PreloadingIndicator from '$lib/PreloadingIndicator.svelte';
 	import ThemeToggler from '$lib/ThemeToggler.svelte';
+	import ForkOnGithub from '$lib/ForkOnGithub.svelte';
 
 	$: path = $page.path;
 </script>
@@ -20,6 +21,7 @@
 
 <main>
 	<ThemeToggler />
+	<ForkOnGithub />
 	<slot />
 </main>
 
