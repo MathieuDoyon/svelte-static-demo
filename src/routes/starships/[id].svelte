@@ -100,6 +100,10 @@
 					<div>Producer :</div>
 					<div>{film.producer}</div>
 				</div>
+				<div class="feature opening-crawl">
+					<div>Opening Crawl :</div>
+					<div>{film.opening_crawl}</div>
+				</div>
 			</div>
 		{/each}
 	{:catch error}
@@ -127,11 +131,21 @@
 	}
 
 	.feature > div:nth-child(1) {
-		color: var(--fg);
+		color: var(--fg-light);
 	}
 
 	.feature > div:nth-child(2) {
 		color: var(--fg);
 		font-weight: 600;
+	}
+
+	.opening-crawl {
+		grid-column-start: 1;
+		grid-column-end: 3;
+	}
+
+	.opening-crawl > div:nth-child(2) {
+		font-size: 0.8rem;
+		font-weight: 500;
 	}
 </style>
